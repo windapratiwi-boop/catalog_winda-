@@ -13,8 +13,8 @@ class HalamanController extends Controller
         return view('front-office.home', compact('produkPopuler'));
     }
 
-    // public function kontak()
-    // {
-    //     return view(' user_front.kontak');
-    // }
+    public function kontak()
+    {
+        return view('front-office.kontak');
+    }
 }
