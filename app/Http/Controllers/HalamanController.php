@@ -1,20 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Data\ProdukDummy;
+use App\Models\Produk;
 
 class HalamanController extends Controller
 {
-    public function home()
+       public function home()
     {
-        $produkPopuler = ProdukDummy::semua();
+        $produkPopuler = Produk::with('kategori')
+                               ->where('status', 'aktif')
+                               ->latest()
+                               ->take(4)
+                               ->get();
 
-        return view('front-office.home', compact('produkPopuler'));
+        return view('user_front.home', compact('produkPopuler'));
     }
 
     public function kontak()
     {
-        return view('front-office.kontak');
+        return view('user_front.kontak');
     }
 }
