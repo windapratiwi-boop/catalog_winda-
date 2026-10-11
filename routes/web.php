@@ -6,6 +6,7 @@ use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\BackOffice\AuthController;
 use App\Http\Controllers\BackOffice\DashboardController;
 use App\Http\Controllers\BackOffice\KategoriController;
+use App\Http\Controllers\BahasaController;
 use App\Http\Controllers\BackOffice\ProdukController as ProdukBackOffice;
 
 
@@ -15,6 +16,8 @@ Route::get('/kontak', [HalamanController::class, 'kontak'])->name('kontak');
 
 Route::get('/produk', [ProdukController::class, 'index'])->name('produk.index');
 Route::get('/produk/{produk:slug}', [ProdukController::class, 'show'])->name('produk.show');
+
+Route::get('/bahasa/{kode}', [BahasaController::class, 'ganti'])->name('bahasa.ganti');
 
 Route::prefix('back-office')->name('back_office.')->group(function () {
 
