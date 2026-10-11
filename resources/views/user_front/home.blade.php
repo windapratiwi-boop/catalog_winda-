@@ -12,8 +12,9 @@
                       <h2 class="text-3xl md:text-7xl font-bold text-white mb-2 md:mb-4">Koleksi Pilihan</h2>
                       <p class="mb-4 text-white md:text-2xl">Temukan berbagai pilihan sandal dengan desain stylish yang cocok<br>untuk melengkapi penampilanmu.</p>
                         <a href="/"
-                            class="bg-primary hover:bg-transparent text-white hover:text-white border border-transparent hover:border-white font-semibold px-4 py-2 rounded-full inline-block">Shop
-                            now</a>
+                            class="bg-primary hover:bg-transparent text-white hover:text-white border border-transparent hover:border-white font-semibold px-4 py-2 rounded-full inline-block">
+
+                            {{__('web.belanja_now')}}</a>
                     </div>
                 </div>
                 <!-- Slide 2 -->
@@ -23,8 +24,7 @@
                       <h2 class="text-3xl md:text-7xl font-bold text-white mb-2 md:mb-4">Nyaman di Setiap Langkah</h2>
                       <p class="mb-4 text-white md:text-2xl">Sandal yang nyaman digunakan untuk menemani aktivitasmu sepanjang hari.<br>cocok untuk berbagai outfitmu.</p>
                         <a href="/"
-                            class="bg-white hover:bg-transparent text-black hover:text-white font-semibold px-4 py-2 rounded-full inline-block border border-transparent hover:border-white">Shop
-                            now</a>
+                            class="bg-white hover:bg-transparent text-black hover:text-white font-semibold px-4 py-2 rounded-full inline-block border border-transparent hover:border-white"> {{__('web.belanja_now')}}</a>
                     </div>
                 </div>
                 <!-- Slide 3 -->
@@ -34,8 +34,7 @@
                       <h2 class="text-3xl md:text-7xl font-bold text-white mb-2 md:mb-4">Tampil Lebih Elegan</h2>
                       <p class="mb-4 text-white md:text-2xl">Lengkapi gayamu dengan sandal elegan<br>yang cocok untuk berbagai kesempatan</p>
                         <a href="/"
-                            class="bg-primary hover:bg-transparent text-white hover:text-white border border-transparent hover:border-white font-semibold px-4 py-2 rounded-full inline-block">Shop
-                            now</a>
+                            class="bg-primary hover:bg-transparent text-white hover:text-white border border-transparent hover:border-white font-semibold px-4 py-2 rounded-full inline-block"> {{__('web.belanja_now')}}</a>
                     </div>
                 </div>
             </div>
@@ -98,7 +97,7 @@
     <!-- Popular product section -->
     <section id="popular-products">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold mb-8">Popular products</h2>
+            <h2 class="text-2xl font-bold mb-8">{{__('web.produk_populer')}}</h2>
             <div class="flex flex-wrap -mx-4">
                  @foreach ($produkPopuler as $produk)
                 <!-- Product 1 -->
@@ -117,7 +116,7 @@
                       <span class="text-lg font-bold text-primary">{{ $produk->hargaRupiah() }}</span>
                       <span class="text-sm line-through ml-2">{{ $produk->hargaCoretRupiah() }}</span>
                     </div>
-                    <button class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-4 rounded-full w-full">Add to Cart</button>
+                    <button class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-4 rounded-full w-full">{{__('web.tambah_keranjang')}}</button>
                   </div>
                 </div>
                @endforeach

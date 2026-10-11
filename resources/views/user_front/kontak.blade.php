@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('user_front.layouts.app')
 
 
 @section('konten')
@@ -12,7 +12,7 @@
             </span>
 
             <h1 class="mt-3 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                Hubungi Kami
+                {{__('web.kontak')}}
             </h1>
 
             <p class="mt-5 text-base leading-7 text-gray-600 sm:text-lg">
@@ -45,7 +45,7 @@
                             </div>
 
                             <div>
-                                <h3 class="font-semibold">Alamat</h3>
+                                <h3 class="font-semibold"> {{__('web.alamat')}}</h3>
                                 <p class="mt-1 text-sm text-gray-300">
                                     Abian Semal, Bali
                                 </p>
@@ -58,7 +58,7 @@
                             </div>
 
                             <div>
-                                <h3 class="font-semibold">Telepon</h3>
+                                <h3 class="font-semibold"> {{__('web.telepon')}}</h3>
                                 <p class="mt-1 text-sm text-gray-300">
                                     +62 XXX-XXXX-XXXX
                                 </p>
@@ -71,7 +71,7 @@
                             </div>
 
                             <div>
-                                <h3 class="font-semibold">Email</h3>
+                                <h3 class="font-semibold"> {{__('web.email')}}</h3>
                                 <p class="mt-1 text-sm text-gray-300">
                                     hello@halonabali.com
                                 </p>
@@ -84,7 +84,7 @@
                             </div>
 
                             <div>
-                                <h3 class="font-semibold">Jam Operasional</h3>
+                                <h3 class="font-semibold"> {{__('web.jam_buka')}}</h3>
                                 <p class="mt-1 text-sm leading-6 text-gray-300">
                                     Senin - Jumat<br>
                                     08:00 - 17:00 WITA
@@ -101,7 +101,7 @@
                 <div class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 sm:p-10">
 
                     <h2 class="text-2xl font-semibold text-gray-900">
-                        Kirim Pesan
+                         {{__('web.kirim_pesan')}}
                     </h2>
 
                     <p class="mt-2 text-sm text-gray-500">
@@ -112,7 +112,7 @@
 
                         <div>
                             <label for="nama" class="mb-2 block text-sm font-medium text-gray-700">
-                                Nama Lengkap
+                                 {{__('web.nama_lengkap')}}
                             </label>
 
                             <input
@@ -125,7 +125,7 @@
 
                         <div>
                             <label for="email" class="mb-2 block text-sm font-medium text-gray-700">
-                                Email
+                                 {{__('web.email')}}
                             </label>
 
                             <input
@@ -138,7 +138,7 @@
 
                         <div>
                             <label for="subjek" class="mb-2 block text-sm font-medium text-gray-700">
-                                Subjek
+                                 {{__('web.subjek')}}
                             </label>
 
                             <input
@@ -151,7 +151,7 @@
 
                         <div>
                             <label for="pesan" class="mb-2 block text-sm font-medium text-gray-700">
-                                Pesan
+                                 {{__('web.pesan')}}
                             </label>
 
                             <textarea
@@ -167,7 +167,7 @@
                             class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90">
 
                             <i class="fa-solid fa-paper-plane"></i>
-                            Kirim Pesan
+                            {{__('web.kirim_pesan')}}
 
                         </button>
 
@@ -204,7 +204,7 @@
 
                     <div>
                         <p class="text-sm font-semibold text-gray-900">
-                            Lokasi
+                             {{__('web.alamat')}}
                         </p>
 
                         <p class="mt-1 text-sm text-gray-500">

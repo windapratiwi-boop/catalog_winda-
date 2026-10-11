@@ -47,7 +47,7 @@
                 <div id="filters" class="w-full md:w-1/4 p-4 hidden md:block">
                     <!-- Category Filter -->
                     <div class="mb-6 pb-8 border-b border-gray-line">
-                        <h3 class="text-lg font-semibold mb-6">Category</h3>
+                        <h3 class="text-lg font-semibold mb-6">{{__('web.kategori')}}</h3>
                         <div class="space-y-2">
                             <label class="flex items-center">
                                 <input type="checkbox" class="form-checkbox custom-checkbox">
@@ -65,7 +65,7 @@
                     </div>
                     <!-- Size Filter -->
                     <div class="mb-6 pb-8 border-b border-gray-line">
-                        <h3 class="text-lg font-semibold mb-6">Size</h3>
+                        <h3 class="text-lg font-semibold mb-6">{{__('web.ukuran')}}</h3>
                         <div class="space-y-2">
                             <label class="flex items-center">
                                 <input type="checkbox" class="form-checkbox custom-checkbox">
@@ -83,7 +83,7 @@
                     </div>
                     <!-- Color Filter -->
                     <div class="mb-6 pb-8 border-b border-gray-line">
-                        <h3 class="text-lg font-semibold mb-6">Color</h3>
+                        <h3 class="text-lg font-semibold mb-6">{{__('web.warna')}}</h3>
                         <div class="space-y-2">
                             <label class="flex items-center custom-color-checkbox" data-color="#ff0000">
                                 <input type="checkbox" class="form-checkbox custom-checkbox">
@@ -157,8 +157,7 @@
                                 <span class="text-sm line-through ml-2">{{ $produk->hargaCoretRupiah() }}</span>
                             </div>
                             <button
-                                class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-4 rounded-full w-full">Add
-                                to Cart</button>
+                                class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-4 rounded-full w-full">{{__('web.tambah_keranjang')}}</button>
                         </div>
                         @endforeach
                     <!-- Pagination -->

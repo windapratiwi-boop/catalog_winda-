@@ -80,10 +80,10 @@
                                 <a href="#" class="ml-4 text-primary font-semibold">Write a review</a>
                             </div>
                             <div class="mb-4 pb-4 border-b border-gray-line">
-                                <p class="mb-2">Kategori:<strong><a href="#" class="hover:text-primary"> {{ $produk->kategori->nama_kategori }}</a></strong>
+                                <p class="mb-2">{{__('web.kategori')}}:<strong><a href="#" class="hover:text-primary"> {{ $produk->kategori->nama_kategori }}</a></strong>
                                 </p>
-                                <p class="mb-2">Product code:<strong> {{ $produk->kode_produk }}</strong></p>
-                                <p class="mb-2">Availability:<strong>  {{ $produk->status }}</strong></p>
+                                <p class="mb-2">{{__('web.kategori')}}:<strong> {{ $produk->kode_produk }}</strong></p>
+                                <p class="mb-2">{{__('web.stok')}}:<strong>  {{ $produk->stok }}</strong></p>
                             </div>
                             <div class="text-2xl font-semibold mb-8">{{ $produk->hargaRupiah() }}</div>
                             <div class="flex items-center mb-8">
@@ -96,8 +96,7 @@
                                     class="bg-primary hover:bg-transparent border border-transparent hover:border-primary text-white hover:text-primary font-semibold  w-10 h-10 rounded-full focus:outline-none">+</button>
                             </div>
                             <button
-                                class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-4 rounded-full">Add
-                                to Cart</button>
+                                class="bg-primary border border-transparent hover:bg-transparent hover:border-primary text-white hover:text-primary font-semibold py-2 px-4 rounded-full">{{__('web.tambah_keranjang')}}</button>
                         </div>
                         <!-- Social sharing -->
                         <div class="flex space-x-4 my-6">
@@ -124,8 +123,8 @@
                         </div>
                         <!-- Additional Information -->
                         <div>
-                            <h3 class="text-lg font-semibold mb-2">Product Description</h3>
-                            <p>{{$produk['deskripsi']}}</p>
+                            <h3 class="text-lg font-semibold mb-2">{{__('web.deskripsi_produk')}}</h3>
+                            <p>{{$produk->deskripsi}}</p>
                         </div>
                     </div>
                 </div>
