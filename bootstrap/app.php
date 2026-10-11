@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+
 use Illuminate\Http\Request;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -17,6 +18,12 @@ return Application::configure(basePath: dirname(__DIR__))
     ]);
 
     // Tamu yang mencoba masuk area terkunci diantar ke login back office
+    $middleware->redirectGuestsTo(fn () => route('back_office.login'));
+
+       $middleware->web(append: [
+        \App\Http\Middleware\SetBahasa::class,
+    ]);
+
     $middleware->redirectGuestsTo(fn () => route('back_office.login'));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
