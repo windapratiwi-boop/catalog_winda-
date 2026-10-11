@@ -32,6 +32,8 @@ return [
     'tersedia'       => ':jumlah in stock',
     'habis'          => 'Out of stock',
     'produk_terkait' => 'Related Products',
+     'ukuran' => 'Size',
+    'warna' => 'Color',
 
     // ---------- Halaman kontak ----------
     'kontak_judul'   => 'Contact Us',

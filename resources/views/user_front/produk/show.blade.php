@@ -24,11 +24,9 @@
                         <div class="grid gap-4">
                             <!-- Big Image -->
                             <div id="main-image-container">
-                              @if ($produk->gambar)
-                <img src="{{ asset('storage/' . $produk->gambar) }}"
-                     alt="{{ $produk->nama_produk }}"
-                     class="w-full object-cover mb-4 rounded-lg">
-            @endif
+                                <img id="main-image"
+                                    class="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
+                                    src="{{ asset('storage/' . $produk->gambar) }}" alt="{{ $produk->nama_produk }}" />
                             </div>
                             <!-- Small Images -->
                             <div class="grid grid-cols-5 gap-4">
